@@ -1,66 +1,17 @@
 <body>
-    <div class="card mb-3">
+    <div [id] = "" class="card mb-3" *ngFor = "let n of news">
         <div class="row no-gutters">
           <div class="col-md-4">
-            <img src="assets/India's 10 covid hotspots.jpg" class="card-img" alt="India's covid hotspots">
+            <img src="assets/{{ n.imageSrc }}.jpg" class="card-img" alt="India's covid hotspots">
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h6>Date: 01/04/2020</h6>
-              <h5 class="card-title">India's 10 Covid-19 hotspots: An overview</h5>
-              <p class="card-text">NEW DELHI: The government is focusing its attention on 10 'hotspots' across the country in its effort to control the spread of Covid-19, which has infected more than 1,200 people and claimed at least 35 lives. There are two hotspots each in Uttar Pradesh, Delhi, Kerala and Maharashtra and one each in Gujarat and Rajasthan</p>
-              <p class="card-text"><small class="text-muted">Read More...</small></p>
+              <h6>Date: {{ n.date }}</h6>
+              <h5 class="card-title">{{ n.newsLines }}</h5>
+              <p class="card-text">{{ n.matter }}</p>
+              <p class="card-text"><small class="text-muted"> Read More...</small></p>
             </div>
           </div>
         </div>
       </div>
-    
-      <div class="card mb-3">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="assets/India's 10 covid hotspots.jpg" class="card-img" alt="India's covid hotspots">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h6>Date: 01/04/2020</h6>
-              <h5 class="card-title">India's 10 Covid-19 hotspots: An overview</h5>
-              <p class="card-text">NEW DELHI: The government is focusing its attention on 10 'hotspots' across the country in its effort to control the spread of Covid-19, which has infected more than 1,200 people and claimed at least 35 lives. There are two hotspots each in Uttar Pradesh, Delhi, Kerala and Maharashtra and one each in Gujarat and Rajasthan</p>
-              <p class="card-text"><small class="text-muted">Read More...</small></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-      <div class="card mb-3">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="assets/India's 10 covid hotspots.jpg" class="card-img" alt="India's covid hotspots">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h6>Date: 01/04/2020</h6>
-              <h5 class="card-title">India's 10 Covid-19 hotspots: An overview</h5>
-              <p class="card-text">NEW DELHI: The government is focusing its attention on 10 'hotspots' across the country in its effort to control the spread of Covid-19, which has infected more than 1,200 people and claimed at least 35 lives. There are two hotspots each in Uttar Pradesh, Delhi, Kerala and Maharashtra and one each in Gujarat and Rajasthan</p>
-              <p class="card-text"><small class="text-muted">Read More...</small></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-      <div class="card mb-3">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="assets/India's 10 covid hotspots.jpg" class="card-img" alt="India's covid hotspots">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h6>Date: 01/04/2020</h6>
-              <h5 class="card-title">India's 10 Covid-19 hotspots: An overview</h5>
-              <p class="card-text">NEW DELHI: The government is focusing its attention on 10 'hotspots' across the country in its effort to control the spread of Covid-19, which has infected more than 1,200 people and claimed at least 35 lives. There are two hotspots each in Uttar Pradesh, Delhi, Kerala and Maharashtra and one each in Gujarat and Rajasthan</p>
-              <p class="card-text"><small class="text-muted">Read More...</small></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-    </body>
+</body>
