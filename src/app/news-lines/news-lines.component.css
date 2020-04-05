@@ -14,3 +14,7 @@ body{
 h6{
     float: right;
 }
+
+#remove{
+    display: none;
+}

@@ -1,0 +1,22 @@
+/* navbar */
+
+#UserLogin{
+    margin-left: 72em;
+}
+
+.navbar-brand{
+    color: mediumslateblue;
+}
+
+/* sourcename bar */
+#sourceName{
+    text-align: center;
+    background-color:navy;
+    color: white;
+}
+
+/* filtersbar */
+form .btn{
+    background-color: green;
+}
+
